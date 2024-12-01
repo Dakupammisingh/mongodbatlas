@@ -1,21 +1,117 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* General reset and styles */
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom right, #f0f8ff, #d6e6f3);
+  color: #333;
+}
+
+/* Container styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+.header {
+  text-align: center;
+  padding: 20px 0;
+  background: #1e90ff;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.header p {
+  margin: 10px 0 0;
+  font-size: 1.2em;
+}
+
+/* Main content styles */
+.main-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form section */
+.form-section {
+  margin-bottom: 20px;
+}
+
+.form-section h2 {
+  margin-bottom: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+input:focus {
+  outline: none;
+  border-color: #1e90ff;
+  box-shadow: 0 0 5px rgba(30, 144, 255, 0.5);
+}
+
+.btn-submit {
+  padding: 10px 15px;
+  background: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background: #104e8b;
+}
+
+/* Message styles */
+.message {
+  margin-top: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  color: green;
+}
+
+/* Extra content section */
+.extra-content h2 {
+  margin-bottom: 10px;
+}
+
+.extra-content p {
+  margin-bottom: 10px;
+}
+
+/* Footer styles */
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 0;
+  background: #333;
+  color: white;
+  border-radius: 10px;
 }
